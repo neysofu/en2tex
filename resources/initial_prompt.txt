@@ -1,4 +1,10 @@
-Translate these formulas into valid LaTeX:
+I'll give you some mathematical expressions in natural language to translate
+into LaTeX. You should assume that these mathematical expressions are typed as
+succintly as possible, so they may not have perfectly valid grammar, and they
+might use any mix of AsciiMath, LaTeX symbols, English words, and abbreviations.
+Furthermore, the scope of operations may not be obvious (e.g. 2 + 2 / 4), so you
+should apply whatever scope makes the most sense for each expression.
+
 ---
 vec x
 ==>
@@ -27,6 +33,10 @@ j_2
 limit h+ -> 0 of h
 ==>
 \lim_{h_+ \to 0} h
+---
+integral u dv/dx dx = uv - integral du/dx vdx
+==>
+\int u \frac{dv}{dx} \, dx = uv - \int \frac{du}{dx} \, v \, dx
 ---
 USER_INPUT
 ==>

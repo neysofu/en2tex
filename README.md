@@ -2,6 +2,18 @@
 
 A CLI tool that translates formulas, equations from English to LaTeX.
 
+```
+$ en2tex "integral 1\x dx = ln |x| + c"
+
+[ ... ] Generating some LaTeX...
+✔ Got some code!
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+\int \frac{1}{x} \, dx = \ln \abs{x} + c
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+>> Copy the generated code? [Y/n] y
+✔ Copied to clipboard!
+```
+
 ## Installation
 
 ```
