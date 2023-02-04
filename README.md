@@ -1,4 +1,4 @@
-# English to LaTeX AI, inside your terminal
+# `en2tex`
 
 A CLI tool that translates formulas, equations from English to LaTeX.
 
