@@ -2,7 +2,7 @@
 
 A CLI tool that translates formulas, equations from English to LaTeX.
 
-[![demo](https://asciinema.org/a/ii79xAvU4kIklFvaHYiL5o4J0.svg?rows=15)](https://asciinema.org/a/ii79xAvU4kIklFvaHYiL5o4J0?autoplay=1&rows=15)
+![demo](resources/demo.gif)]
 
 ## Installation
 
