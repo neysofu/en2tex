@@ -4,7 +4,7 @@ name: CI
 
 jobs:
   check:
-    name: Lint
+    name: Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
