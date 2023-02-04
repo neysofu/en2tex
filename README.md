@@ -30,7 +30,7 @@ You may need to close and reopen your terminal after installation.
 export OPENAI_API_KEY='sk-XXXXXXXX'
 ```
 
-Once you have configured your environment, run `plz` followed by whatever it is that you want to do (`plz show me all options for the plz cli`).
+Once you have configured your environment, run `en2tex` followed by whatever mathematical expression that you want.
 
 To get a full overview of all available options, run `en2tex --help`
 
