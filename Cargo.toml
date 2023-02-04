@@ -2,7 +2,7 @@
 name = "en2tex"
 license = "MIT"
 edition = "2021"
-version = "1.0.0"
+version = "1.0.1"
 readme = "README.md"
 categories = ["command-line-utilities"]
 homepage = "https://github.com/neysofu/en2tex"
