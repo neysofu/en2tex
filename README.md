@@ -2,7 +2,7 @@
 
 A CLI tool that translates formulas, equations from English to LaTeX.
 
-![demo](resources/demo.gif)]
+![demo](resources/demo.gif)
 
 ## Installation
 
