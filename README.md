@@ -1,28 +1,18 @@
-# Copilot, for your terminal
+# English to LaTeX AI, inside your terminal
 
-A CLI tool that generates shell scripts from a human readable description.
+A CLI tool that translates formulas, equations from English to LaTeX.
 
 ## Installation
 
-You can install `plz` by running the following command in your terminal.
-
 ```
-curl -fsSL https://raw.githubusercontent.com/m1guelpf/plz-cli/main/install.sh | sh -
+cargo install en2tex
 ```
 
-### Homebrew
-
-You can also install `plz` using [Homebrew](https://brew.sh/).
-
-```sh
-$ brew install plz-cli
-```
-
-You may need to close and reopen your terminal after installation. Alternatively, you can download the binary corresponding to your OS from the [latest release](https://github.com/m1guelpf/plz-cli/releases/latest).
+You may need to close and reopen your terminal after installation.
 
 ## Usage
 
-`plz` uses [GPT-3](https://beta.openai.com/). To use it, you'll need to grab an API key from [your dashboard](https://beta.openai.com/), and save it to `OPENAI_API_KEY` as follows (you can also save it in your bash/zsh profile for persistance between sessions).
+`en2tex` uses [GPT-3](https://beta.openai.com/). To use it, you'll need to grab an API key from [your dashboard](https://beta.openai.com/), and save it to `OPENAI_API_KEY` environment variable as follows (I suggest saving it in your shell's profile for persistance between sessions):
 
 ```bash
 export OPENAI_API_KEY='sk-XXXXXXXX'
@@ -30,26 +20,27 @@ export OPENAI_API_KEY='sk-XXXXXXXX'
 
 Once you have configured your environment, run `plz` followed by whatever it is that you want to do (`plz show me all options for the plz cli`).
 
-To get a full overview of all available options, run `plz --help`
+To get a full overview of all available options, run `en2tex --help`
 
-```sh
-$ plz --help
-Generates bash scripts from the command line
+```
+$ en2tex --help
+Translated English into LaTeX formulas, using OPENAI APIs
 
-Usage: plz [OPTIONS] <PROMPT>
+Usage: en2tex [OPTIONS] [PROMPT]...
 
 Arguments:
-  <PROMPT>  Description of the command to execute
+  [PROMPT]...  English description of the desired LaTeX output
 
 Options:
-  -y, --force    Run the generated program without asking for confirmation
-  -h, --help     Print help information
-  -V, --version  Print version information
+  -m, --model <MODEL>  Which OpenAI model to use [default: text-davinci-003]
+  -c, --copy           Copy the generated LaTeX without asking for confirmation first
+  -h, --help           Print help information
+  -V, --version        Print version information
 ```
 
-## Develop
+## Acknowledgements 
 
-Make sure you have the latest version of rust installed (use [rustup](https://rustup.rs/)). Then, you can build the project by running `cargo build`, and run it with `cargo run`.
+This repository is a fork of https://github.com/m1guelpf/plz-cli, which inspired `en2tex`. The original code was simple enough for me to seamlessly adapt it to LaTeX. Thank you to the original authors!
 
 ## License
 

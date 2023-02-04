@@ -1,0 +1,32 @@
+Translate these formulas into valid LaTeX:
+---
+vec x
+==>
+\vec{x}
+---
+| hat a cap vec b |
+==>
+\abs{\hat{a} \cap \vec{b}} 
+---
+reals^n
+==>
+\mathbb{R}^n
+---
+7n
+==>
+7n
+---
+j2
+==>
+j^2
+---
+j2
+==>
+j_2
+---
+limit h+ -> 0 of h
+==>
+\lim_{h_+ \to 0} h
+---
+USER_INPUT
+==>

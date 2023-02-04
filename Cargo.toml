@@ -1,16 +1,17 @@
 [package]
-name = "plz"
+name = "en2tex"
 license = "MIT"
 edition = "2021"
-version = "0.1.0"
+version = "1.0.0"
 readme = "README.md"
 categories = ["command-line-utilities"]
-homepage = "https://github.com/m1guelpf/plz-cli"
-repository = "https://github.com/m1guelpf/plz-cli"
-authors = ["Miguel Piedrafita <soy@miguelpiedrafita.com>"]
-description = "Generate bash scripts from the command line, using Codex"
+homepage = "https://github.com/neysofu/en2tex"
+repository = "https://github.com/neysofu/en2tex"
+authors = ["Miguel Piedrafita <soy@miguelpiedrafita.com>", "Filippo Neysofu Costa <filippo@neysofu.me>"]
+description = "Translated English into LaTeX formulas, using OPENAI APIs"
 
 [dependencies]
+arboard = "3.2.0"
 question = "0.2.2"
 spinners = "4.1.0"
 serde_json = { version = "1.0.89", default-features = false }
