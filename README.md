@@ -1,6 +1,6 @@
 # `en2tex`
 
-A CLI tool that translates formulas, equations from English to LaTeX.
+A CLI utility to generate LaTeX mathematical expressions, powered by OpenAI APIs.
 
 ![demo](resources/demo.gif)
 
@@ -25,13 +25,12 @@ Once you have configured your environment, run `en2tex` followed by whatever mat
 To get a full overview of all available options, run `en2tex --help`
 
 ```
-$ en2tex --help
-Translated English into LaTeX formulas, using OPENAI APIs
+A CLI utility to generate LaTeX mathematical expressions, powered by OpenAI APIs
 
 Usage: en2tex [OPTIONS] [PROMPT]...
 
 Arguments:
-  [PROMPT]...  English description of the desired LaTeX output
+  [PROMPT]...  Description of the desired LaTeX output. You can use English words, abbreviations, or any notation resembling LaTeX commands and AsciiMath
 
 Options:
   -m, --model <MODEL>  Which OpenAI model to use [default: text-davinci-003]

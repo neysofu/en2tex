@@ -2,13 +2,13 @@
 name = "en2tex"
 license = "MIT"
 edition = "2021"
-version = "1.0.1"
+version = "1.0.2"
 readme = "README.md"
 categories = ["command-line-utilities"]
 homepage = "https://github.com/neysofu/en2tex"
 repository = "https://github.com/neysofu/en2tex"
 authors = ["Miguel Piedrafita <soy@miguelpiedrafita.com>", "Filippo Neysofu Costa <filippo@neysofu.me>"]
-description = "Translated English into LaTeX formulas, using OPENAI APIs"
+description = "A CLI utility to generate LaTeX mathematical expressions, powered by OpenAI APIs"
 
 [dependencies]
 arboard = "3.2.0"

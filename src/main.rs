@@ -12,7 +12,8 @@ use std::env;
 #[derive(Parser, Debug)]
 #[command(author, version, about, long_about = None)]
 struct Cli {
-    /// English description of the desired LaTeX output
+    /// Description of the desired LaTeX output. You can use English words,
+    /// abbreviations, or any notation resembling LaTeX commands and AsciiMath
     prompt: Vec<String>,
 
     /// Which OpenAI model to use
